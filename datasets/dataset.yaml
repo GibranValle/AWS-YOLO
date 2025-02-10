@@ -1,0 +1,10 @@
+# dataset.yaml
+
+path: e:\Documents\CODING\Python\AWS-YOLO\datasets  # Ruta base del dataset
+train: e:\Documents\CODING\Python\AWS-YOLO\datasets\images\train  # Directorio con imágenes de entrenamiento
+val: e:\Documents\CODING\Python\AWS-YOLO\datasets\images\val  # Directorio con imágenes de validación
+test: e:\Documents\CODING\Python\AWS-YOLO\datasets\images\test  # Directorio con imágenes de prueba (opcional)
+
+# Clases
+nc: 2  # Número de clases (modifica según tu dataset)
+names: ["clase_1", "clase_2"]  # Nombres de las clases (ajusta según tus etiquetas)
