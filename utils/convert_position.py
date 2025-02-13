@@ -51,6 +51,16 @@ generator_text = 26, 1560, 260, 1594
 print("\ngenerator_text")
 print(calc_relative_position_2M(generator_text))
 
+ff_gen_tools_icon = 900, 1300, 1200, 1593
+print("\ff_gen_tools_icon")
+print(calc_relative_position_2M(ff_gen_tools_icon))
+
+ff_gen_tools_text = 421, 770, 790, 800
+print("\ff_gen_tools_text")
+print(calc_relative_position_2M(ff_gen_tools_text))
+
+
+
 # mcu_mutl_with = mcu_mutl[2] - mcu_mutl[0]
 # mcu_mutl_height = mcu_mutl[3] - mcu_mutl[1]
 
