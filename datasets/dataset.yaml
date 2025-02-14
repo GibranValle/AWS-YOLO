@@ -8,3 +8,35 @@ test: e:\Documents\CODING\Python\AWS-YOLO\datasets\images\test  # Directorio con
 # Clases
 nc: 12  # Número de clases (modifica según tu dataset)
 names: [['aws_perform_exposure_2_calibrate', 'ff_gen_tools_generator_exposure', 'ff_gen_tools_generator_prep', 'ff_gen_tools_generator_release', 'ff_gen_tools_generator_standby', 'fpd_calibration_pass', 'fpd_offline', 'fpd_calibrating', 'generator_blocked', 'generator_exposure', 'generator_standby', 'generator_offline']]  # Nombres de las clases (ajusta según tus etiquetas)
+
+batch_size: 16 # Tamaño del lote
+epochs: 100 # Número de épocas de entrenamiento
+learning_rate: 0.001 # Tasa de aprendizaje inicial
+loss_function: yolov1_loss # Función de pérdida
+optimizer: adam # Optimizador
+metrics: [precision, recall, f1_score] # Métricas de evaluación
+
+# Arquitectura del modelo
+architecture:
+  input_size: [448, 448]
+  backbone: resnet50
+  num_classes: 20
+
+# Hiperparámetros de YOLOv11
+yolov11:
+  grid_size: [7, 7]
+  boxes_per_cell: 2
+  lambda_coord: 5
+  lambda_noobj: 0.5
+
+use_cuda: True # Entrenamiento en GPU
+save_checkpoints: True # Guardar checkpoints
+checkpoint_dir: e:\Documents\CODING\Python\AWS-YOLO\checkpoint # Ruta para guardar checkpoints
+visualize: True # Visualización
+visualization_dir: e:\Documents\CODING\Python\AWS-YOLO\visualization # Ruta para guardar visualizaciones
+
+
+
+
+
+
